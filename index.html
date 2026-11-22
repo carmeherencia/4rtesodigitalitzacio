@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal didàctic interactiu per a la matèria de Digitalització de 4t d'ESO a l'Institut Matadepera. Edició d'àudio digital, AudioMass, BandLab for Education i aprenentatge per reptes.">
+  <meta name="author" content="Departament de Tecnologia i Digitalització - Institut Matadepera">
+  <title>Digitalització 4t ESO · Institut Matadepera</title>
+  
+  <!-- Estils CSS personalitzats -->
+  <link rel="stylesheet" href="css/estils.css">
+  
+  <!-- Favicon educatiu en SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎧</text></svg>">
+</head>
+<body>
+
+  <!-- ========================================================================
+       CAPÇALERA PRINCIPAL (HEADER)
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#audio" class="brand" title="Inici - Digitalització 4t ESO">
+        <div class="brand-icon">🎧</div>
+        <div class="brand-info">
+          <h1>Digitalització 4t ESO</h1>
+          <span class="brand-badge">Institut Matadepera · Curs 2026-2027</span>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <!-- Indicador de progrés global de l'alumnat -->
+        <div class="header-progress" title="Progrés global de les teves pràctiques d'àudio">
+          <span>El teu progrés:</span>
+          <div class="header-progress-bar-wrap">
+            <div class="header-progress-bar-fill" id="header-progress-fill"></div>
+          </div>
+          <span id="header-progress-text">0% (0/0 passos)</span>
+        </div>
+
+        <!-- Botó mode fosc/clar -->
+        <button class="btn-theme-toggle" id="theme-toggle-btn" aria-label="Canviar mode fosc o clar">
+          🌙
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       BANNER HERO PEDAGÒGIC
+       ======================================================================== -->
+  <section class="hero-banner">
+    <div class="container hero-content">
+      <div>
+        <div class="hero-tag">
+          <span>✨</span> Innovació didàctica i competència digital
+        </div>
+        <h2 class="hero-title">Portal d'Edició i Creació Multimèdia</h2>
+        <p class="hero-description">
+          Aprendre fent: treball per reptes pràctics, llistes de comprovació pas a pas, autoavaluació competencial per rúbriques i eines gratuïtes al núvol per a l'alumnat de 4t d'ESO.
+        </p>
+        <div class="hero-meta-badges">
+          <span class="hero-meta-badge">💻 100% al núvol (Chromebooks)</span>
+          <span class="hero-meta-badge">🛠️ AudioMass & BandLab Edu</span>
+          <span class="hero-meta-badge">📥 Descàrregues d'àudio integrades</span>
+          <span class="hero-meta-badge">🔄 Guardat automàtic local</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SELECCIÓ DE BLOCS TEMÀTICS (Audio, Photopea, Python, Video)
+       ======================================================================== -->
+  <section class="blocks-section">
+    <div class="container">
+      <nav class="blocks-nav" id="blocks-nav-container" aria-label="Blocs curriculars">
+        <!-- Renderitzat dinàmicament per js/app.js -->
+      </nav>
+
+      <!-- Sub-navegador de seccions del bloc d'àudio (Pràctiques, Teoria, Banc de Sons, Avaluació) -->
+      <nav class="audio-subnav" id="audio-subnav-container" aria-label="Seccions del bloc d'àudio">
+        <!-- Renderitzat dinàmicament per js/app.js -->
+      </nav>
+
+      <!-- Navegador de Fases (Fase 1 a 4) per al bloc actiu -->
+      <nav class="phase-nav-container" id="phase-nav-container" aria-label="Fases pedagògiques">
+        <!-- Renderitzat dinàmicament per js/app.js -->
+      </nav>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ZONA DE TREBALL PRINCIPAL (MAIN WORKSPACE)
+       ======================================================================== -->
+  <main class="main-workspace">
+    <div class="container" id="main-workspace">
+      <!-- El contingut detallat de la pràctica o el mòdul pròximament es carrega aquí -->
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       PEU DE PÀGINA (FOOTER)
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <span class="footer-brand">Institut Matadepera</span> · Departament de Tecnologia i Digitalització
+        <p style="font-size: 0.78rem; color: var(--text-subtle); margin-top: 0.25rem;">
+          Matèria de Digitalització · 4t d'Educació Secundària Obligatòria (ESO) · Catalunya
+        </p>
+      </div>
+      <div style="text-align: right; font-size: 0.78rem;">
+        <span>🔒 El teu progrés i autoavaluacions es desen en local al teu navegador.</span>
+        <br>
+        <span style="opacity: 0.8;">AudioMass (audiomass.co) · BandLab for Education (edu.bandlab.com)</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       SCRIPTS JAVASCRIPT MODULARS
+       ======================================================================== -->
+  <script src="dades/continguts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <rect width="600" height="450" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <g id="linies-paisatge" stroke="#111827" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Sol -->
+    <circle cx="100" cy="110" r="40" fill="#ffffff" stroke-width="3.5"/>
+    <path d="M100 50 L100 30" stroke-width="3"/>
+    <path d="M100 170 L100 190" stroke-width="3"/>
+    <path d="M40 110 L20 110" stroke-width="3"/>
+    <path d="M160 110 L180 110" stroke-width="3"/>
+    <path d="M58 68 L44 54" stroke-width="3"/>
+    <path d="M142 152 L156 166" stroke-width="3"/>
+    <path d="M142 68 L156 54" stroke-width="3"/>
+    <path d="M58 152 L44 166" stroke-width="3"/>
+
+    <!-- Muntanyes de fons -->
+    <path d="M40 300 L180 130 L320 280 L440 150 L570 300" stroke-width="4"/>
+    <!-- Cims nevats -->
+    <path d="M140 180 L180 130 L220 185 L200 180 L180 190 Z" fill="#ffffff" stroke-width="2.5"/>
+    <path d="M405 195 L440 150 L475 195 L455 190 L440 200 Z" fill="#ffffff" stroke-width="2.5"/>
+
+    <!-- Turons mitjans -->
+    <path d="M0 320 Q200 260 380 320 Q500 350 600 310" stroke-width="3.5"/>
+    <path d="M0 370 Q160 330 350 380 Q480 400 600 360" stroke-width="3.5"/>
+
+    <!-- Casa de muntanya -->
+    <!-- Teulada i xemeneia -->
+    <rect x="420" y="270" width="18" height="35" fill="#ffffff" stroke-width="3"/>
+    <polygon points="340,310 410,240 480,310" fill="#ffffff" stroke-width="4"/>
+    <!-- Cos de la casa -->
+    <rect x="360" y="310" width="100" height="70" fill="#ffffff" stroke-width="3.5"/>
+    <!-- Porta i finestres -->
+    <rect x="395" y="340" width="30" height="40" fill="#ffffff" stroke-width="3"/>
+    <circle cx="418" cy="362" r="2.5" fill="#111827"/>
+    <rect x="370" y="325" width="20" height="20" fill="#ffffff" stroke-width="2.5"/>
+    <line x1="380" y1="325" x2="380" y2="345" stroke-width="2"/>
+    <line x1="370" y1="335" x2="390" y2="335" stroke-width="2"/>
+
+    <rect x="430" y="325" width="20" height="20" fill="#ffffff" stroke-width="2.5"/>
+    <line x1="440" y1="325" x2="440" y2="345" stroke-width="2"/>
+    <line x1="430" y1="335" x2="450" y2="335" stroke-width="2"/>
+
+    <!-- Pins / Arbres -->
+    <polygon points="120,360 90,400 150,400" fill="#ffffff" stroke-width="3"/>
+    <polygon points="120,330 95,370 145,370" fill="#ffffff" stroke-width="3"/>
+    <polygon points="120,305 100,340 140,340" fill="#ffffff" stroke-width="3"/>
+    <rect x="113" y="400" width="14" height="20" fill="#ffffff" stroke-width="3"/>
+
+    <polygon points="200,380 175,415 225,415" fill="#ffffff" stroke-width="3"/>
+    <polygon points="200,355 180,390 220,390" fill="#ffffff" stroke-width="3"/>
+    <rect x="194" y="415" width="12" height="15" fill="#ffffff" stroke-width="3"/>
+
+    <!-- Camí que serpenteja -->
+    <path d="M410 380 Q380 410 300 420 Q220 430 180 450" stroke-width="3.5" stroke-dasharray="8 6"/>
+  </g>
+</svg>

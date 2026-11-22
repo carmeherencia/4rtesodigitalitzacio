@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fonsDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2d3436"/>
+      <stop offset="100%" stop-color="#1e272e"/>
+    </linearGradient>
+    <radialGradient id="pellUlls" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#fedac6"/>
+      <stop offset="70%" stop-color="#f5ba9e"/>
+      <stop offset="100%" stop-color="#de9b7d"/>
+    </radialGradient>
+    <!-- Ombra ullera fosca -->
+    <radialGradient id="ombraUllera" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#6c5ce7" stop-opacity="0.55"/>
+      <stop offset="40%" stop-color="#8854d0" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#a55eea" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#fonsDark)"/>
+
+  <!-- PRIMER PLA DE LA ZONA DELS ULLS -->
+  <g id="zona-ulls">
+    <rect x="50" y="50" width="500" height="350" rx="15" fill="url(#pellUlls)"/>
+
+    <!-- Pont del nas central -->
+    <path d="M290 80 Q285 240 270 340 Q300 360 330 340 Q315 240 310 80" fill="#f0ab8d" opacity="0.4"/>
+    <path d="M285 200 Q280 280 272 320" stroke="#cf8566" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- ULL ESQUERRE -->
+    <!-- Cella -->
+    <path d="M120 135 Q180 110 240 130" stroke="#2c1d11" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <!-- Parpella superior i ull -->
+    <ellipse cx="185" cy="185" rx="45" ry="24" fill="#ffffff"/>
+    <circle cx="185" cy="185" r="18" fill="#3867d6"/>
+    <circle cx="185" cy="185" r="9" fill="#111111"/>
+    <circle cx="180" cy="178" r="4.5" fill="#ffffff"/>
+    <path d="M138 185 Q185 155 232 185" stroke="#1e272e" stroke-width="4.5" fill="none"/>
+    <path d="M142 185 Q185 208 228 185" stroke="#cf8566" stroke-width="2.5" fill="none"/>
+
+    <!-- ULLERES FOSQUES I BOSSES MARCADES SOTA L'ULL ESQUERRE (ORIGEN) -->
+    <ellipse cx="185" cy="225" rx="55" ry="22" fill="url(#ombraUllera)"/>
+    <path d="M135 220 Q185 245 235 220" stroke="#574b90" stroke-width="3.5" fill="none" opacity="0.75" stroke-linecap="round"/>
+    <path d="M145 232 Q185 252 225 232" stroke="#574b90" stroke-width="2" fill="none" opacity="0.6"/>
+
+    <!-- ULL DRET -->
+    <!-- Cella -->
+    <path d="M360 130 Q420 110 480 135" stroke="#2c1d11" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <!-- Parpella superior i ull -->
+    <ellipse cx="415" cy="185" rx="45" ry="24" fill="#ffffff"/>
+    <circle cx="415" cy="185" r="18" fill="#3867d6"/>
+    <circle cx="415" cy="185" r="9" fill="#111111"/>
+    <circle cx="410" cy="178" r="4.5" fill="#ffffff"/>
+    <path d="M368 185 Q415 155 462 185" stroke="#1e272e" stroke-width="4.5" fill="none"/>
+    <path d="M372 185 Q415 208 458 185" stroke="#cf8566" stroke-width="2.5" fill="none"/>
+
+    <!-- ULLERES FOSQUES I BOSSES MARCADES SOTA L'ULL DRET (ORIGEN) -->
+    <ellipse cx="415" cy="225" rx="55" ry="22" fill="url(#ombraUllera)"/>
+    <path d="M365 220 Q415 245 465 220" stroke="#574b90" stroke-width="3.5" fill="none" opacity="0.75" stroke-linecap="round"/>
+    <path d="M375 232 Q415 252 455 232" stroke="#574b90" stroke-width="2" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- Distintiu visual -->
+  <rect x="25" y="25" width="220" height="32" rx="6" fill="#eb4d4b" opacity="0.95"/>
+  <text x="35" y="46" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">ORIGEN: Ulleres marcades</text>
+</svg>

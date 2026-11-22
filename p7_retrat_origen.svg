@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="fonsEstudiRetro" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#4b6584"/>
+      <stop offset="100%" stop-color="#1e272e"/>
+    </radialGradient>
+    <radialGradient id="pellRetrat" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#ffdfba"/>
+      <stop offset="70%" stop-color="#f8c291"/>
+      <stop offset="100%" stop-color="#e58e26"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#fonsEstudiRetro)"/>
+
+  <!-- RETRAT COMPLET -->
+  <g id="retrat">
+    <!-- Coll i samarreta -->
+    <path d="M260 380 L250 450 L350 450 L340 380 Z" fill="#e58e26" opacity="0.6"/>
+    <path d="M180 430 Q300 400 420 430 L430 450 L170 450 Z" fill="#2d3436"/>
+
+    <!-- Cabell posterior -->
+    <path d="M180 200 Q150 320 180 390 Q140 280 150 160 Q200 60 300 60 Q400 60 450 160 Q460 280 420 390 Q450 320 420 200 Z" fill="#1e272e"/>
+
+    <!-- Cara ovalada -->
+    <ellipse cx="300" cy="240" rx="95" ry="135" fill="url(#pellRetrat)"/>
+
+    <!-- Cabell frontal i serrell -->
+    <path d="M205 160 Q240 100 300 110 Q370 100 395 160 Q340 130 300 135 Q250 130 205 160 Z" fill="#2f3640"/>
+
+    <!-- Celles -->
+    <path d="M240 190 Q265 180 285 190" stroke="#1e272e" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M315 190 Q335 180 360 190" stroke="#1e272e" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+    <!-- Ulls -->
+    <ellipse cx="262" cy="208" rx="16" ry="10" fill="#ffffff"/>
+    <circle cx="262" cy="208" r="7" fill="#20bf6b"/>
+    <circle cx="262" cy="208" r="3.5" fill="#111111"/>
+    <path d="M245 208 Q262 196 279 208" stroke="#1e272e" stroke-width="2.5" fill="none"/>
+
+    <ellipse cx="338" cy="208" rx="16" ry="10" fill="#ffffff"/>
+    <circle cx="338" cy="208" r="7" fill="#20bf6b"/>
+    <circle cx="338" cy="208" r="3.5" fill="#111111"/>
+    <path d="M321 208 Q338 196 355 208" stroke="#1e272e" stroke-width="2.5" fill="none"/>
+
+    <!-- Nas -->
+    <path d="M298 205 Q295 250 292 258 Q300 263 308 258" stroke="#c0392b" stroke-width="2.5" fill="none" opacity="0.6" stroke-linecap="round"/>
+
+    <!-- Llavis -->
+    <path d="M275 300 Q300 290 325 300 Q300 318 275 300 Z" fill="#e74c3c" opacity="0.85"/>
+    <path d="M278 300 Q300 304 322 300" stroke="#b71540" stroke-width="1.8" fill="none"/>
+
+    <!-- IMPERFECCIONS A CORREGIR (ORIGEN) -->
+    <!-- Línies d'expressió al front -->
+    <path d="M260 155 Q300 152 340 156" stroke="#b06d44" stroke-width="2" fill="none" opacity="0.75"/>
+    <path d="M270 165 Q300 162 330 165" stroke="#b06d44" stroke-width="1.8" fill="none" opacity="0.65"/>
+
+    <!-- Taquetes i grans a la barbeta i galtes -->
+    <circle cx="288" cy="330" r="4.5" fill="#e55039" opacity="0.85"/>
+    <circle cx="288" cy="330" r="1.5" fill="#ffffff" opacity="0.6"/>
+    <circle cx="312" cy="338" r="3.5" fill="#c0392b" opacity="0.8"/>
+    <circle cx="240" cy="275" r="4" fill="#d63031" opacity="0.75"/>
+    <circle cx="360" cy="265" r="4.5" fill="#eb4d4b" opacity="0.8"/>
+    <circle cx="370" cy="285" r="3" fill="#8d553b" opacity="0.7"/>
+
+    <!-- Ulleres subtils -->
+    <path d="M248 222 Q262 232 276 222" stroke="#6c5ce7" stroke-width="2.5" fill="none" opacity="0.55"/>
+    <path d="M324 222 Q338 232 352 222" stroke="#6c5ce7" stroke-width="2.5" fill="none" opacity="0.55"/>
+  </g>
+
+  <!-- Distintiu visual -->
+  <rect x="15" y="15" width="225" height="32" rx="6" fill="#eb4d4b" opacity="0.95"/>
+  <text x="25" y="36" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">ORIGEN: Retrat sense retoc</text>
+</svg>

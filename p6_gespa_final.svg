@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <!-- Cel de parc -->
+    <linearGradient id="celParc2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#70a1ff"/>
+      <stop offset="100%" stop-color="#dfe4ea"/>
+    </linearGradient>
+    <!-- Gespa verda -->
+    <linearGradient id="gespaGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7bed9f"/>
+      <stop offset="30%" stop-color="#2ed573"/>
+      <stop offset="100%" stop-color="#10ac84"/>
+    </linearGradient>
+  </defs>
+
+  <!-- CEL -->
+  <rect width="600" height="200" fill="url(#celParc2)"/>
+  <!-- Núvols -->
+  <ellipse cx="150" cy="80" rx="60" ry="22" fill="#ffffff" opacity="0.85"/>
+  <ellipse cx="180" cy="70" rx="40" ry="25" fill="#ffffff" opacity="0.85"/>
+  <ellipse cx="440" cy="95" rx="70" ry="24" fill="#ffffff" opacity="0.75"/>
+
+  <!-- ARBRES DE FONS -->
+  <path d="M-20 220 Q40 130 110 200 Q180 120 260 210 Q340 140 420 200 Q510 110 620 220 L620 260 L-20 260 Z" fill="#2ed573" opacity="0.85"/>
+  <path d="M-20 230 Q60 160 140 220 Q230 150 320 225 Q400 160 480 230 Q550 170 620 235 L620 270 L-20 270 Z" fill="#10ac84" opacity="0.9"/>
+
+  <!-- PRAT DE GESPA CONTINU SENSE EL CON -->
+  <path d="M0 240 Q150 225 300 235 Q450 245 600 230 L600 450 L0 450 Z" fill="url(#gespaGrad2)"/>
+
+  <!-- Textura de gespa i brins clonats a la zona central -->
+  <path d="M50 300 Q60 285 70 300 Q60 315 50 300 Z" fill="#2ed573" opacity="0.7"/>
+  <path d="M120 350 L122 335 M122 350 L126 332" stroke="#10ac84" stroke-width="2"/>
+  <path d="M480 320 L483 305 M485 320 L490 303" stroke="#10ac84" stroke-width="2"/>
+  <path d="M420 380 L423 360 M425 380 L430 358" stroke="#10ac84" stroke-width="2.5"/>
+  <path d="M180 410 L184 390 M186 410 L192 388" stroke="#10ac84" stroke-width="2.5"/>
+
+  <!-- Zona on estava el con: ara textura de gespa natural reconstruïda -->
+  <path d="M280 320 L283 305 M285 320 L290 303" stroke="#10ac84" stroke-width="2"/>
+  <path d="M310 330 L313 312 M315 330 L320 310" stroke="#10ac84" stroke-width="2.2"/>
+  <path d="M290 360 L294 340 M296 360 L302 338" stroke="#10ac84" stroke-width="2.5"/>
+  <path d="M265 355 Q275 340 285 355 Q275 370 265 355 Z" fill="#2ed573" opacity="0.7"/>
+  <!-- Petites margarides silvestres clonades per omplir naturalment -->
+  <circle cx="280" cy="345" r="4" fill="#ffffff"/>
+  <circle cx="280" cy="345" r="1.5" fill="#f1c40f"/>
+  <circle cx="325" cy="355" r="3.5" fill="#ffffff"/>
+  <circle cx="325" cy="355" r="1.2" fill="#f1c40f"/>
+
+  <!-- Distintiu visual pedagogic -->
+  <rect x="15" y="15" width="200" height="32" rx="6" fill="#20bf6b" opacity="0.95"/>
+  <text x="25" y="36" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">FINAL: Objecte clonat ✓</text>
+</svg>

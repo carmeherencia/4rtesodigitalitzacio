@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <!-- Fons neutre d'estudi -->
+    <linearGradient id="fonsEstudi" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#34495e"/>
+      <stop offset="100%" stop-color="#1a252f"/>
+    </linearGradient>
+    <!-- Pell càlida natural -->
+    <radialGradient id="pellFace" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#fedac6"/>
+      <stop offset="60%" stop-color="#f5ba9e"/>
+      <stop offset="100%" stop-color="#de9b7d"/>
+    </radialGradient>
+    <filter id="softGlow">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- FONS -->
+  <rect width="600" height="450" fill="url(#fonsEstudi)"/>
+
+  <!-- PRIMER PLA DE ROSTRE -->
+  <g id="rostre" filter="url(#softGlow)">
+    <!-- Silueta cara -->
+    <path d="M150 120 Q120 280 200 380 Q300 430 400 380 Q480 280 450 120 Q300 60 150 120 Z" fill="url(#pellFace)"/>
+
+    <!-- Cabell marcant la cara -->
+    <path d="M130 140 Q110 50 250 40 Q390 30 470 120 Q420 70 300 70 Q160 80 130 140 Z" fill="#2c1d11"/>
+    <path d="M120 160 Q100 280 150 360 Q130 260 140 180 Z" fill="#2c1d11"/>
+    <path d="M480 160 Q500 280 450 360 Q470 260 460 180 Z" fill="#2c1d11"/>
+
+    <!-- Cella esquerra i dreta -->
+    <path d="M200 175 Q240 160 270 172" stroke="#2c1d11" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M330 172 Q360 160 400 175" stroke="#2c1d11" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+    <!-- Ull esquerre -->
+    <ellipse cx="238" cy="200" rx="22" ry="14" fill="#ffffff"/>
+    <circle cx="238" cy="200" r="10" fill="#4a301d"/>
+    <circle cx="238" cy="200" r="5" fill="#111111"/>
+    <circle cx="235" cy="196" r="2.5" fill="#ffffff"/>
+    <path d="M214 200 Q238 185 262 200" stroke="#1a1a1a" stroke-width="3" fill="none"/>
+
+    <!-- Ull dret -->
+    <ellipse cx="362" cy="200" rx="22" ry="14" fill="#ffffff"/>
+    <circle cx="362" cy="200" r="10" fill="#4a301d"/>
+    <circle cx="362" cy="200" r="5" fill="#111111"/>
+    <circle cx="359" cy="196" r="2.5" fill="#ffffff"/>
+    <path d="M338 200 Q362 185 386 200" stroke="#1a1a1a" stroke-width="3" fill="none"/>
+
+    <!-- Nas suau -->
+    <path d="M295 195 Q290 260 285 270 Q300 278 315 270" stroke="#c98363" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Llapis de llavis -->
+    <path d="M260 330 Q300 315 340 330 Q300 355 260 330 Z" fill="#e77f7f"/>
+    <path d="M265 330 Q300 335 335 330" stroke="#b33939" stroke-width="2" fill="none"/>
+
+    <!-- IMPERFECCIONS DE LA PELL A ELIMINAR (ORIGEN) -->
+    <!-- Grans i punts vermells a la galta esquerra -->
+    <circle cx="205" cy="250" r="6" fill="#eb4d4b" opacity="0.85"/>
+    <circle cx="205" cy="250" r="2.5" fill="#ffffff" opacity="0.6"/>
+    <circle cx="225" cy="270" r="4.5" fill="#e55039" opacity="0.8"/>
+    <circle cx="195" cy="285" r="5" fill="#c0392b" opacity="0.75"/>
+    <circle cx="218" cy="295" r="3.5" fill="#e74c3c" opacity="0.7"/>
+
+    <!-- Pigues i taques fosques al front i galta dreta -->
+    <circle cx="280" cy="140" r="3" fill="#8d553b" opacity="0.75"/>
+    <circle cx="310" cy="135" r="2.5" fill="#8d553b" opacity="0.7"/>
+    <circle cx="295" cy="150" r="3.5" fill="#a05e40" opacity="0.8"/>
+
+    <circle cx="375" cy="260" r="5.5" fill="#d63031" opacity="0.85"/>
+    <circle cx="375" cy="260" r="2" fill="#fff" opacity="0.5"/>
+    <circle cx="395" cy="280" r="4" fill="#8d553b" opacity="0.75"/>
+    <circle cx="360" cy="295" r="3" fill="#b33939" opacity="0.7"/>
+
+    <!-- Petita cicatriu o marca sota el llavi -->
+    <path d="M280 365 Q295 368 310 364" stroke="#a05e40" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Distintiu visual pedagogic -->
+  <rect x="15" y="15" width="220" height="32" rx="6" fill="#eb4d4b" opacity="0.95"/>
+  <text x="25" y="36" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">ORIGEN: Amb imperfeccions</text>
+</svg>

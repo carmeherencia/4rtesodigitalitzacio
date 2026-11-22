@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <!-- Cel blau -->
+    <linearGradient id="celBlau" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#48dbfb"/>
+      <stop offset="60%" stop-color="#a0e7fd"/>
+      <stop offset="100%" stop-color="#e8f8fe"/>
+    </linearGradient>
+    <!-- Sol radiant -->
+    <radialGradient id="solGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff200"/>
+      <stop offset="70%" stop-color="#ff9f43"/>
+      <stop offset="100%" stop-color="#ee5253"/>
+    </radialGradient>
+    <!-- Muntanyes fons -->
+    <linearGradient id="muntanyesGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8395a7"/>
+      <stop offset="60%" stop-color="#576574"/>
+      <stop offset="100%" stop-color="#222f3e"/>
+    </linearGradient>
+    <!-- Turons verds -->
+    <linearGradient id="turonsVerds1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#26de81"/>
+      <stop offset="100%" stop-color="#20bf6b"/>
+    </linearGradient>
+    <linearGradient id="turonsVerds2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2bcbba"/>
+      <stop offset="100%" stop-color="#0fb9b1"/>
+    </linearGradient>
+    <!-- Teulada vermella -->
+    <linearGradient id="teuladaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#c0392b"/>
+    </linearGradient>
+    <!-- Fusta casa -->
+    <linearGradient id="fustaCasa" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e17055"/>
+      <stop offset="100%" stop-color="#d63031"/>
+    </linearGradient>
+    <!-- Pins verds -->
+    <linearGradient id="pinsVerd" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1dd1a1"/>
+      <stop offset="100%" stop-color="#10ac84"/>
+    </linearGradient>
+  </defs>
+
+  <!-- FONS: CEL -->
+  <rect width="600" height="450" fill="url(#celBlau)"/>
+
+  <!-- CAPA DE COLOR -->
+  <g id="capa-color">
+    <!-- Sol -->
+    <circle cx="100" cy="110" r="40" fill="url(#solGlow)"/>
+
+    <!-- Muntanyes fons -->
+    <polygon points="40,300 180,130 320,280 440,150 570,300 40,300" fill="url(#muntanyesGrad)"/>
+    <!-- Cims de neu -->
+    <polygon points="140,180 180,130 220,185 200,180 180,190" fill="#ffffff"/>
+    <polygon points="405,195 440,150 475,195 455,190 440,200" fill="#ffffff"/>
+
+    <!-- Turons mitjans i primer pla -->
+    <path d="M0 320 Q200 260 380 320 Q500 350 600 310 L600 450 L0 450 Z" fill="url(#turonsVerds2)"/>
+    <path d="M0 370 Q160 330 350 380 Q480 400 600 360 L600 450 L0 450 Z" fill="url(#turonsVerds1)"/>
+
+    <!-- Camí de terra -->
+    <path d="M410 380 Q380 410 300 420 Q220 430 180 450 L220 450 Q260 430 330 420 Q400 410 430 380 Z" fill="#f7d794"/>
+
+    <!-- Casa: xemeneia, teulada, parets -->
+    <rect x="420" y="270" width="18" height="35" fill="#95a5a6"/>
+    <polygon points="340,310 410,240 480,310" fill="url(#teuladaGrad)"/>
+    <rect x="360" y="310" width="100" height="70" fill="url(#fustaCasa)"/>
+    <rect x="395" y="340" width="30" height="40" fill="#6d4c41"/>
+    <!-- Finestres amb llum càlida -->
+    <rect x="370" y="325" width="20" height="20" fill="#ffeaa7"/>
+    <rect x="430" y="325" width="20" height="20" fill="#ffeaa7"/>
+
+    <!-- Pins -->
+    <rect x="113" y="400" width="14" height="20" fill="#795548"/>
+    <polygon points="120,360 90,400 150,400" fill="url(#pinsVerd)"/>
+    <polygon points="120,330 95,370 145,370" fill="url(#pinsVerd)"/>
+    <polygon points="120,305 100,340 140,340" fill="url(#pinsVerd)"/>
+
+    <rect x="194" y="415" width="12" height="15" fill="#795548"/>
+    <polygon points="200,380 175,415 225,415" fill="url(#pinsVerd)"/>
+    <polygon points="200,355 180,390 220,390" fill="url(#pinsVerd)"/>
+  </g>
+
+  <!-- CAPA DE LÍNIES ORIGINALS -->
+  <g id="linies-paisatge" stroke="#1e272e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="100" cy="110" r="40" stroke-width="3.5"/>
+    <path d="M100 50 L100 30" stroke="#f39c12"/>
+    <path d="M100 170 L100 190" stroke="#f39c12"/>
+    <path d="M40 110 L20 110" stroke="#f39c12"/>
+    <path d="M160 110 L180 110" stroke="#f39c12"/>
+    <path d="M58 68 L44 54" stroke="#f39c12"/>
+    <path d="M142 152 L156 166" stroke="#f39c12"/>
+    <path d="M142 68 L156 54" stroke="#f39c12"/>
+    <path d="M58 152 L44 166" stroke="#f39c12"/>
+
+    <path d="M40 300 L180 130 L320 280 L440 150 L570 300" stroke-width="4"/>
+    <path d="M140 180 L180 130 L220 185 L200 180 L180 190 Z" stroke-width="2.5"/>
+    <path d="M405 195 L440 150 L475 195 L455 190 L440 200 Z" stroke-width="2.5"/>
+
+    <path d="M0 320 Q200 260 380 320 Q500 350 600 310" stroke-width="3.5"/>
+    <path d="M0 370 Q160 330 350 380 Q480 400 600 360" stroke-width="3.5"/>
+
+    <rect x="420" y="270" width="18" height="35" stroke-width="3"/>
+    <polygon points="340,310 410,240 480,310" stroke-width="4"/>
+    <rect x="360" y="310" width="100" height="70" stroke-width="3.5"/>
+    <rect x="395" y="340" width="30" height="40" stroke-width="3"/>
+    <circle cx="418" cy="362" r="2.5" fill="#111827" stroke="none"/>
+    <rect x="370" y="325" width="20" height="20" stroke-width="2.5"/>
+    <line x1="380" y1="325" x2="380" y2="345" stroke-width="2"/>
+    <line x1="370" y1="335" x2="390" y2="335" stroke-width="2"/>
+
+    <rect x="430" y="325" width="20" height="20" stroke-width="2.5"/>
+    <line x1="440" y1="325" x2="440" y2="345" stroke-width="2"/>
+    <line x1="430" y1="335" x2="450" y2="335" stroke-width="2"/>
+
+    <polygon points="120,360 90,400 150,400" stroke-width="3"/>
+    <polygon points="120,330 95,370 145,370" stroke-width="3"/>
+    <polygon points="120,305 100,340 140,340" stroke-width="3"/>
+    <rect x="113" y="400" width="14" height="20" stroke-width="3"/>
+
+    <polygon points="200,380 175,415 225,415" stroke-width="3"/>
+    <polygon points="200,355 180,390 220,390" stroke-width="3"/>
+    <rect x="194" y="415" width="12" height="15" stroke-width="3"/>
+
+    <path d="M410 380 Q380 410 300 420 Q220 430 180 450" stroke-width="3.5" stroke-dasharray="8 6"/>
+  </g>
+</svg>
